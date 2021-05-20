@@ -2,7 +2,12 @@
   
 *Contest : Portfolio - Campus Academy 2020/2021 - SÉGALEN Thomas*  
   
-## Mission  
+1. [Mission](README.md#1-mission-)  
+2. [Étapes de production](README.md#2-étapes-de-production-)  
+3. [Barème](README.md#3-barème-)  
+4. [Rendu](README.md#4-rendu-)  
+  
+## 1. Mission  
   
 Vous devez créer en HTML CSS un template de votre portfolio.  
 Ce portfolio aura notamment pour fonction de :  
@@ -12,7 +17,7 @@ Ce portfolio aura notamment pour fonction de :
 Il s’agit d’une des premières étapes de la création de votre empreinte numérique professionnelle.  
 Nous ne vous demandons pas d’ajouter du contenu sur votre site, mais de préparer sastructure.  
   
-## Étapes de production  
+## 2. Étapes de production  
   
 **1)** Imaginer la structure de votre site, propice au partage de vos projets
 **2)** Penser UX
@@ -20,7 +25,7 @@ Nous ne vous demandons pas d’ajouter du contenu sur votre site, mais de prépa
 **4)** Réaliser des commits réguliers
 **5)** Vérifier que l'accès à votre repository soit public
   
-## Barème  
+## 3. Barème  
   
 **GIT /4**  
 Dont :  
@@ -50,7 +55,7 @@ Dont :
 * Utilisation d'une animation de type "transition" **/1**  
 * Utilisation d'une animation de type "keyframe" **/1**  
   
-## Rendu  
+## 4. Rendu  
   
 Vous devez envoyer un lien de votre repository GitHub contenant le code **HTML** / **CSS** réalisé, le **vendredi 21 mai** à **17h30** maximum.  
   
