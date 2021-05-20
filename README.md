@@ -2,10 +2,10 @@
   
 *Contest : Portfolio - Campus Academy 2020/2021 - SÉGALEN Thomas*  
   
-1. [Mission](README.md#1-mission-)  
-2. [Étapes de production](README.md#2-étapes-de-production-)  
-3. [Barème](README.md#3-barème-)  
-4. [Rendu](README.md#4-rendu-)  
+1. [Mission](README.md#1-mission)  
+2. [Étapes de production](README.md#2-étapes-de-production)  
+3. [Barème](README.md#3-barème)  
+4. [Rendu](README.md#4-rendu)  
   
 ## 1. Mission  
   
