@@ -72,7 +72,6 @@ nav {
   border-radius: 3.2px;
   padding: 8px 16px;
   cursor: pointer;
-  transition: all 200ms ease-in;
 }
 
 .about-button:hover {
@@ -118,8 +117,13 @@ nav {
   border-radius: 10px;
 }
 
-h2,
-p {
+.informations {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+
+h2 {
   display: flex;
   justify-content: center;
   padding-top: 25px;
@@ -129,7 +133,7 @@ p {
 
 p {
   padding-top: 30px;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 .home-icon {
@@ -159,13 +163,12 @@ p {
   top: -50%;
   width: 200%;
   height: 200%;
-  background-color: #5d9b8c;
+  background-color: #6aeeb5;
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#399953, #399953),
-    linear-gradient(#fde581, #fde581), linear-gradient(#de5c64, #de5c64),
-    linear-gradient(#6bc7d6, #6bc7d6);
+  background-image: linear-gradient(#039d69, #6aeeb5),
+    linear-gradient(#29e6a7, #6aeeb5), linear-gradient(#29e6a7, #039d69);
   animation: rotate 4s linear infinite;
 }
 
@@ -228,10 +231,6 @@ footer {
 
 @media (max-width: 600px) {
   .nav-list {
-    background: white;
-    box-shadow: 0px 0px 10px var(--clr-gray200);
-    padding: 16px 0;
-    border-radius: var(--radius);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -254,7 +253,7 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .split {
     flex-direction: row;
   }
@@ -265,11 +264,5 @@ footer {
 
   .split > * + * {
     margin-left: 5px;
-  }
-}
-
-@media (max-width: 1200px) {
-  body {
-    overflow-y: auto;
   }
 }
