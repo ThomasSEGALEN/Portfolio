@@ -120,20 +120,18 @@ nav {
 .informations {
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 15px;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-left: 25px;
   padding-right: 25px;
 }
 
 p {
-  padding-top: 30px;
-  /* padding-bottom: 15px; */
+  padding-top: 15px;
 }
 
 .home-icon {
@@ -254,15 +252,15 @@ footer {
 }
 
 @media (min-width: 1250px) {
-  .split {
-    flex-direction: row;
+  .container {
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
-  .split > * {
-    flex-basis: 100%;
-  }
-
-  .split > * + * {
-    margin-left: 5px;
+  .name {
+    position: absolute;
+    font-size: 30px;
+    top: 90px;
+    left: 32%;
   }
 }
