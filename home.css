@@ -125,9 +125,7 @@ nav {
 h2 {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 15px;
 }
 
 p {
@@ -194,6 +192,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  font-size: 14px;
 }
 
 .link.social > a {
@@ -228,6 +227,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-y: hidden;
+  }
+
   .nav-list {
     display: flex;
     justify-content: space-around;
@@ -252,6 +255,10 @@ footer {
 }
 
 @media (min-width: 1250px) {
+  body {
+    overflow-y: hidden;
+  }
+
   .container {
     margin-left: 30%;
     margin-right: 30%;
@@ -262,5 +269,11 @@ footer {
     font-size: 30px;
     top: 90px;
     left: 32%;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    overflow-y: auto;
   }
 }
