@@ -82,6 +82,7 @@ nav {
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
+  padding-bottom: 150px;
 }
 
 .container h1 {
@@ -97,7 +98,6 @@ nav {
   background: white;
   box-shadow: 0px 0px 10px var(--clr-gray200);
   border-color: red;
-  animation: animation 2s infinite;
 }
 
 .linebreaker {
@@ -128,6 +128,51 @@ p {
   max-width: 100%;
 }
 
+/* Add styles to the footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 65px;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.link.social > a {
+  display: inline-block;
+  line-height: 36px;
+  margin: 0 20px;
+}
+
+.social img {
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+}
+
+.copyright {
+  color: black;
+}
+
+/* Add some hover effects to buttons */
+.footerEffect > img {
+  transform: scale(1);
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialised;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.footerEffect:hover > img {
+  transform: scale(1.25);
+  transition: all 0.5s ease;
+}
+
 @media (min-width: 1200px) {
   .split {
     flex-direction: row;
@@ -146,11 +191,52 @@ p {
   }
 }
 
-@keyframes animation {
-  0% {
-    border-color: blue;
+@media (max-width: 1200px) {
+  body {
+    overflow-y: auto;
   }
+}
+
+@keyframes rotate {
   100% {
-    border-color: red;
+    transform: rotate(1turn);
   }
+}
+
+.rainbow {
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.rainbow::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #5d9b8c;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953),
+    linear-gradient(#fde581, #fde581), linear-gradient(#de5c64, #de5c64),
+    linear-gradient(#6bc7d6, #6bc7d6);
+  animation: rotate 4s linear infinite;
+}
+
+.rainbow::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
 }
