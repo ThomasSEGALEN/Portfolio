@@ -1,5 +1,5 @@
+/* Global properties */
 :root {
-  /*   color variables */
   --clr-primary: #6aeeb5;
   --clr-primary-hover: #29e6a7;
   --clr-primary-dark: #039d69;
@@ -7,6 +7,7 @@
   --clr-gray200: #cfd8dc;
 }
 
+/* Page settings */
 *,
 *:before,
 *:after {
@@ -18,10 +19,12 @@ body {
   background: var(--clr-gray100);
 }
 
+/* Navigation bar configuration */
 nav {
   margin-bottom: 60px;
 }
 
+/* Add styles to the navigation bar */
 .nav-list {
   background: white;
   box-shadow: 0px 0px 10px var(--clr-gray200);
@@ -78,15 +81,18 @@ nav {
   background: var(--clr-primary-hover);
 }
 
+/* Section configuration */
 .container {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 150px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px var(--clr-gray200);
 }
 
+/* Add styles to the section */
 .name {
   position: absolute;
   font-size: 30px;
@@ -137,12 +143,14 @@ p {
   max-width: 100%;
 }
 
+/* Rotation effect using keyframe */
 @keyframes rotate {
   100% {
     transform: rotate(1turn);
   }
 }
 
+/* Rotation effect configuration */
 .rainbow {
   position: relative;
   z-index: 0;
@@ -180,7 +188,7 @@ p {
   border-radius: 5px;
 }
 
-/* Add styles to the footer */
+/* Footer configuration */
 footer {
   position: fixed;
   left: 0;
@@ -211,7 +219,7 @@ footer {
   color: black;
 }
 
-/* Add some hover effects to buttons */
+/* Add hover effects to buttons */
 .footerEffect > img {
   transform: scale(1);
   transition: all 0.5s ease;
@@ -226,9 +234,10 @@ footer {
   transition: all 0.5s ease;
 }
 
+/* Responsive configuration */
 @media (max-width: 600px) {
   body {
-    overflow-y: hidden;
+    overflow-y: auto;
   }
 
   .nav-list {

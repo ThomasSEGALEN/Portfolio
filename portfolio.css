@@ -1,5 +1,5 @@
+/* Global properties */
 :root {
-  /*   color variables */
   --clr-primary: #6aeeb5;
   --clr-primary-hover: #29e6a7;
   --clr-primary-dark: #039d69;
@@ -7,6 +7,7 @@
   --clr-gray200: #cfd8dc;
 }
 
+/* Page settings */
 *,
 *:before,
 *:after {
@@ -18,10 +19,12 @@ body {
   background: var(--clr-gray100);
 }
 
+/* Navigation bar configuration */
 nav {
   margin-bottom: 60px;
 }
 
+/* Add styles to the navigation bar */
 .nav-list {
   background: white;
   box-shadow: 0px 0px 10px var(--clr-gray200);
@@ -78,6 +81,7 @@ nav {
   background: var(--clr-primary-hover);
 }
 
+/* Section configuration */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -88,6 +92,7 @@ nav {
   padding-bottom: 150px;
 }
 
+/* Add styles to the section */
 .container h2 {
   text-align: center;
   padding-left: 15px;
@@ -106,6 +111,7 @@ nav {
   padding: 10px;
 }
 
+/* Article configuration */
 .block1 {
   display: flex;
   flex-direction: row;
@@ -116,6 +122,7 @@ nav {
   box-shadow: 0px 0px 10px var(--clr-gray200);
 }
 
+/* Add styles to the article */
 .block1 a {
   text-decoration: none;
   color: black;
@@ -125,6 +132,7 @@ nav {
   color: var(--clr-primary-dark);
 }
 
+/* Article configuration */
 .block2 {
   display: flex;
   flex-direction: row-reverse;
@@ -135,6 +143,7 @@ nav {
   box-shadow: 0px 0px 10px var(--clr-gray200);
 }
 
+/* Add styles to the article */
 .block2 a {
   text-decoration: none;
   color: black;
@@ -144,6 +153,7 @@ nav {
   color: var(--clr-primary-dark);
 }
 
+/* Articles configuration */
 .block3 {
   display: flex;
   flex-direction: row;
@@ -153,6 +163,7 @@ nav {
   box-shadow: 0px 0px 10px var(--clr-gray200);
 }
 
+/* Add styles to the article */
 .block3 a {
   text-decoration: none;
   color: black;
@@ -162,6 +173,7 @@ nav {
   color: var(--clr-primary-dark);
 }
 
+/* Projects redirection buttons */
 .here-button {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -208,7 +220,7 @@ footer {
   color: black;
 }
 
-/* Add some hover effects to buttons */
+/* Add hover effects to buttons */
 .footerEffect > img {
   transform: scale(1);
   transition: all 0.5s ease;
@@ -223,7 +235,12 @@ footer {
   transition: all 0.5s ease;
 }
 
+/* Responsive configuration */
 @media (max-width: 600px) {
+  body {
+    overflow-y: auto;
+  }
+
   .nav-list {
     display: flex;
     justify-content: space-around;
@@ -269,23 +286,3 @@ footer {
     text-align: center;
   }
 }
-
-/* @media (min-width: 1200px) {
-  .split {
-    flex-direction: row;
-  }
-
-  .split > * {
-    flex-basis: 100%;
-  }
-
-  .split > * + * {
-    margin-left: 5px;
-  }
-}
-
-@media (max-width: 1200px) {
-  body {
-    overflow-y: auto;
-  }
-} */
