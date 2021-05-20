@@ -7,7 +7,7 @@
   --clr-gray200: #cfd8dc;
 
   /*   border radius */
-  --radius: 0.2rem;
+  --radius: 3.2px;
 }
 
 *,
@@ -21,10 +21,14 @@ body {
   background: var(--clr-gray100);
 }
 
+nav {
+  margin-bottom: 100px;
+}
+
 .nav-list {
   background: white;
   box-shadow: 0px 0px 10px var(--clr-gray200);
-  padding: 1rem 0;
+  padding: 16px 0;
   border-radius: var(--radius);
   display: flex;
   justify-content: flex-end;
@@ -33,7 +37,7 @@ body {
 
 .nav-item {
   list-style: none;
-  margin-right: 2rem;
+  margin-right: 32px;
 }
 
 .nav-item a {
@@ -48,17 +52,17 @@ body {
 
 .nav-item:first-child {
   margin-right: auto;
-  margin-left: 2rem;
+  margin-left: 32px;
 }
 
 .btn-primary {
   font-family: Montserrat, sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   background: var(--clr-primary);
   border: none;
   outline: none;
   border-radius: var(--radius);
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   cursor: pointer;
   transition: all 200ms ease-in;
 }
@@ -71,4 +75,82 @@ body {
   opacity: 0.7;
   width: 30px;
   height: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container h1 {
+  position: absolute;
+  font-size: 30px;
+  top: 140px;
+  left: 40px;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+  border-color: red;
+  animation: animation 2s infinite;
+}
+
+.linebreaker {
+  position: absolute;
+  left: 48%;
+  background-color: black;
+  width: 60px;
+  height: 7px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+h2,
+p {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+p {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.home-icon {
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 30px;
+  }
+
+  .linebreaker {
+    left: 24%;
+  }
+}
+
+@keyframes animation {
+  0% {
+    border-color: blue;
+  }
+  100% {
+    border-color: red;
+  }
 }
