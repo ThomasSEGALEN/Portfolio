@@ -5,6 +5,10 @@
   --clr-primary-dark: #039d69;
   --clr-gray100: #f0f7f8;
   --clr-gray200: #cfd8dc;
+  --clr-red: #de5c64;
+  --clr-blue: #6bc7d6;
+  --clr-yellow: #fde581;
+  --clr-green: #399953;
 
   /*   border radius */
   --radius: 3.2px;
@@ -22,7 +26,7 @@ body {
 }
 
 nav {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .nav-list {
@@ -38,6 +42,17 @@ nav {
 .nav-item {
   list-style: none;
   margin-right: 32px;
+}
+
+.hamburger-icon {
+  display: block;
+  opacity: 0.7;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-icon {
+  display: none;
 }
 
 .nav-item a {
@@ -71,12 +86,6 @@ nav {
   background: var(--clr-primary-hover);
 }
 
-.hamburger-icon {
-  opacity: 0.7;
-  width: 30px;
-  height: 30px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -88,21 +97,18 @@ nav {
 .container h1 {
   position: absolute;
   font-size: 30px;
-  top: 140px;
+  top: 120px;
   left: 40px;
 }
 
-.split {
+.title {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  background: white;
-  box-shadow: 0px 0px 10px var(--clr-gray200);
-  border-color: red;
 }
 
 .linebreaker {
-  position: absolute;
-  left: 48%;
   background-color: black;
   width: 60px;
   height: 7px;
@@ -110,12 +116,21 @@ nav {
   opacity: 0.7;
 }
 
+.split {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+  border-radius: 10px;
+}
+
 h2,
 p {
   display: flex;
   justify-content: center;
-  padding-left: 10px;
   padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 p {
@@ -173,6 +188,34 @@ footer {
   transition: all 0.5s ease;
 }
 
+@media (max-width: 600px) {
+  .nav-list {
+    background: white;
+    box-shadow: 0px 0px 10px var(--clr-gray200);
+    padding: 16px 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-icon {
+    opacity: 0.7;
+    display: block;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .container h1 {
+    position: absolute;
+    font-size: 30px;
+    top: 130px;
+    left: 40px;
+  }
+}
+
 @media (min-width: 1200px) {
   .split {
     flex-direction: row;
@@ -183,11 +226,7 @@ footer {
   }
 
   .split > * + * {
-    margin-left: 30px;
-  }
-
-  .linebreaker {
-    left: 24%;
+    margin-left: 5px;
   }
 }
 
@@ -223,9 +262,10 @@ footer {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#399953, #399953),
-    linear-gradient(#fde581, #fde581), linear-gradient(#de5c64, #de5c64),
-    linear-gradient(#6bc7d6, #6bc7d6);
+  background-image: linear-gradient(var(--clr-green), var(--clr-green)),
+    linear-gradient(var(--clr-yellow), var(--clr-yellow)),
+    linear-gradient(var(--clr-red), var(--clr-red)),
+    linear-gradient(var(--clr-blue), var(--clr-blue));
   animation: rotate 4s linear infinite;
 }
 
