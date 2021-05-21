@@ -91,6 +91,7 @@
 
     <!-- Footer - some useful links -->
     <footer class="footer">
+        <button class="scrollToTopBtn"><span class="arrow">⭯</span></button>
         <div class="link social">
             <a class="footerEffect" href="https://www.linkedin.com/in/thomas-s%C3%A9galen" target="_blank">
                 <img src="assets/linkedin.png" alt="linkedin" />
@@ -111,6 +112,29 @@
             <div id="loader"></div>
         </div>
     </div>
+
+    <script>
+        var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+        var rootElement = document.documentElement
+
+        function handleScroll() {
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+            if ((rootElement.scrollTop / scrollTotal) > 0.80) {
+                scrollToTopBtn.classList.add("showBtn")
+            } else {
+                scrollToTopBtn.classList.remove("showBtn")
+            }
+        }
+
+        function scrollToTop() {
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop)
+        document.addEventListener("scroll", handleScroll)
+    </script>
 </body>
 
 </html>
