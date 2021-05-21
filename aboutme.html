@@ -173,6 +173,7 @@
         var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
         var rootElement = document.documentElement
 
+        // show button if end of page
         function handleScroll() {
             var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
             if ((rootElement.scrollTop / scrollTotal) > 0.80) {
@@ -182,6 +183,7 @@
             }
         }
 
+        // smooth scrolling back to top
         function scrollToTop() {
             rootElement.scrollTo({
                 top: 0,
