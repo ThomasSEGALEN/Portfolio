@@ -139,6 +139,10 @@ nav {
   box-shadow: 0px 0px 10px var(--clr-gray200);
 }
 
+.skills .linebreaker {
+  margin-bottom: 10px;
+}
+
 /* Add styles to the graph */
 .graph {
   display: flex;
@@ -206,8 +210,8 @@ nav {
   text-align: center;
 }
 
-.experience p {
-  line-height: 1px;
+.experience .linebreaker {
+  margin-bottom: 10px;
 }
 
 /* Footer configuration */
