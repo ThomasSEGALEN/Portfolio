@@ -108,7 +108,6 @@ nav {
   flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 150px;
 }
 
 /* Add styles to the section */
@@ -167,13 +166,58 @@ nav {
   max-width: 100%;
 }
 
+/* Rotation effect using keyframe */
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Rotation effect configuration */
+.borderEffect {
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.borderEffect::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #6aeeb5;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#039d69, #6aeeb5),
+    linear-gradient(#29e6a7, #6aeeb5), linear-gradient(#29e6a7, #039d69);
+  animation: rotate 4s linear infinite;
+}
+
+.borderEffect::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+
 /* Article configuration */
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 150px;
   padding-bottom: 10px;
   background: white;
   border-radius: 10px;
@@ -213,51 +257,6 @@ nav {
   display: flex;
   justify-content: center;
   line-height: 1px;
-}
-
-/* Rotation effect using keyframe */
-@keyframes rotate {
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-/* Rotation effect configuration */
-.rainbow {
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 5px;
-}
-
-.rainbow::before {
-  content: "";
-  position: absolute;
-  z-index: -2;
-  left: -50%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: #6aeeb5;
-  background-repeat: no-repeat;
-  background-size: 50% 50%, 50% 50%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#039d69, #6aeeb5),
-    linear-gradient(#29e6a7, #6aeeb5), linear-gradient(#29e6a7, #039d69);
-  animation: rotate 4s linear infinite;
-}
-
-.rainbow::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 6px;
-  top: 6px;
-  width: calc(100% - 12px);
-  height: calc(100% - 12px);
-  background: white;
-  border-radius: 5px;
 }
 
 /* Footer configuration */
