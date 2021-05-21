@@ -43,24 +43,62 @@
     <!-- Content - about me -->
     <section class="container">
         <article class="skills">
-            <div>
-                <ul>
-                    <li>
-                        Connaissances en Algorithmie et Langage C
-                    </li>
-                    <li>
-                        Notions Python
-                    </li>
-                    <li>
-                        Réactif et à l'écoute
-                    </li>
-                    <li>
-                        Motivé et autonome
-                    </li>
-                    <li>
-                        Anglais niveau B2
-                    </li>
-                </ul>
+            <h2>
+                Skills
+            </h2>
+            <ul>
+                <li>
+                    Connaissances en Algorithmie et Langage C
+                </li>
+                <li>
+                    Notions de Python, Java, JavaScript
+                </li>
+                <li>
+                    Intermédiaire en HTML/CSS
+                </li>
+                <li>
+                    Réactif et à l'écoute
+                </li>
+                <li>
+                    Motivé et autonome
+                </li>
+                <li>
+                    Anglais niveau B2
+                </li>
+            </ul>
+        </article>
+        <article class="graph">
+            <h3>
+                Java
+            </h3>
+            <div class="graph-container">
+                <div class="skill java">
+                    65%
+                </div>
+            </div>
+            <h3>
+                Python
+            </h3>
+            <div class="graph-container">
+                <div class="skill python">
+                    60%
+                </div>
+            </div>
+            <h3>
+                HTML / CSS
+            </h3>
+            <div class="graph-container">
+                <div class="skill htmlcss">
+                    70%
+                </div>
+            </div>
+            <h3>
+                JavaScript
+            </h3>
+            <div class="graph-container">
+                <div class="skill javascript">
+                    50%
+                </div>
             </div>
         </article>
     </section>
@@ -80,6 +118,21 @@
         </div>
         <span class="copyright">Developed & designed by Thomas SÉGALEN | © 2021</span>
     </footer>
+
+    <!-- Loading effect -->
+    <div class="fadeOut">
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            if (!$.browser.webkit) {
+                $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+            }
+        });
+    </script>
 </body>
 
 </html>
