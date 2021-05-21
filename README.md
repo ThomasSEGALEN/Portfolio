@@ -84,4 +84,7 @@ Custom scrollbar :
 Loading effect :  
 *https://codepen.io/WebSonata/pen/bRaONB*  
   
+Scroll back to top :  
+*https://unicode-table.com/fr/*  
+  
 *Header, footer, etc. are from previous projects or my imagination.*
