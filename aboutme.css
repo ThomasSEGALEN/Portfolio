@@ -17,6 +17,7 @@
 body {
   font-family: Montserrat, sans-serif;
   background: var(--clr-gray100);
+  overflow-y: auto;
 }
 
 /* Custom scrollbar */
@@ -105,28 +106,15 @@ nav {
 .container {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 150px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px var(--clr-gray200);
-}
-
-/* Add styles to the section */
-.name {
-  position: absolute;
-  font-size: 30px;
-  top: 90px;
-  left: 40px;
-}
-
-.title {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 130px;
 }
 
+/* Add styles to the sections */
 .linebreaker {
   position: relative;
   background-color: black;
@@ -134,78 +122,96 @@ nav {
   height: 7px;
   border-radius: 10px;
   opacity: 0.7;
+  visibility: visible;
 }
 
-.split {
+/* Add styles to the skills */
+.skills {
   display: flex;
   flex-direction: column;
-  background: white;
-  border-radius: 10px;
-}
-
-.informations {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-h2 {
-  display: flex;
   justify-content: center;
-  padding-top: 15px;
-}
-
-p {
-  padding-top: 15px;
-}
-
-.home-icon {
-  display: block;
-  max-width: 100%;
-}
-
-/* Rotation effect using keyframe */
-@keyframes rotate {
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-/* Rotation effect configuration */
-.rainbow {
-  position: relative;
-  z-index: 0;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 70px;
+  padding-right: 15px;
+  background-color: white;
   border-radius: 10px;
-  overflow: hidden;
-  padding: 5px;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
 }
 
-.rainbow::before {
-  content: "";
-  position: absolute;
-  z-index: -2;
-  left: -50%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: #6aeeb5;
-  background-repeat: no-repeat;
-  background-size: 50% 50%, 50% 50%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#039d69, #6aeeb5),
-    linear-gradient(#29e6a7, #6aeeb5), linear-gradient(#29e6a7, #039d69);
-  animation: rotate 4s linear infinite;
+.skills .linebreaker {
+  margin-bottom: 10px;
 }
 
-.rainbow::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 6px;
-  top: 6px;
-  width: calc(100% - 12px);
-  height: calc(100% - 12px);
-  background: white;
-  border-radius: 5px;
+/* Add styles to the graph */
+.graph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+.skill {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.java {
+  width: 65%;
+  background-color: #2196f3;
+}
+
+.python {
+  width: 60%;
+  background-color: #f44336;
+}
+
+.htmlcss {
+  width: 70%;
+  background-color: #4caf50;
+}
+
+.javascript {
+  width: 50%;
+  background-color: #e6cb52;
+}
+
+/* Add styles to the experience recap */
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+}
+
+.experience h2 {
+  text-align: center;
+}
+
+.experience .linebreaker {
+  margin-bottom: 10px;
 }
 
 /* Footer configuration */
@@ -348,10 +354,6 @@ footer {
 
 /* Responsive configuration */
 @media (max-width: 600px) {
-  body {
-    overflow-y: auto;
-  }
-
   .nav-list {
     display: flex;
     justify-content: space-around;
@@ -369,36 +371,5 @@ footer {
 
   .nav-item {
     display: none;
-  }
-
-  .name {
-    position: absolute;
-    font-size: 30px;
-    top: 105px;
-    left: 40px;
-  }
-}
-
-@media (min-width: 1250px) {
-  body {
-    overflow-y: hidden;
-  }
-
-  .container {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-
-  .name {
-    position: absolute;
-    font-size: 30px;
-    top: 90px;
-    left: 32%;
-  }
-}
-
-@media (min-width: 1400px) {
-  body {
-    overflow-y: auto;
   }
 }
