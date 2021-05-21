@@ -300,12 +300,11 @@ footer {
   color: white;
   cursor: pointer;
   font-size: 16px;
-  line-height: 48px;
   width: 48px;
+  height: 48px;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 100;
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.5s ease;
@@ -321,7 +320,7 @@ footer {
 }
 
 .arrow {
-  font-size: 20px;
+  margin-left: -5px;
 }
 
 /* Add hover effects to buttons */
@@ -469,6 +468,10 @@ footer {
 }
 
 @media (min-width: 1250px) {
+  body {
+    overflow-y: auto;
+  }
+
   .container {
     margin-left: 30%;
     margin-right: 30%;

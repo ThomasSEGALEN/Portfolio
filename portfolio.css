@@ -17,6 +17,7 @@
 body {
   font-family: Montserrat, sans-serif;
   background: var(--clr-gray100);
+  overflow-y: auto;
 }
 
 /* Custom scrollbar */
@@ -107,9 +108,10 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 160px;
 }
 
 /* Add styles to the section */
@@ -254,12 +256,11 @@ footer {
   color: white;
   cursor: pointer;
   font-size: 16px;
-  line-height: 48px;
   width: 48px;
+  height: 48px;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 100;
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.5s ease;
@@ -275,7 +276,7 @@ footer {
 }
 
 .arrow {
-  font-size: 20px;
+  margin-left: -5px;
 }
 
 /* Add hover effects to buttons */
@@ -412,7 +413,6 @@ footer {
 
   .container {
     margin-top: 0px;
-    margin-bottom: 160px;
   }
 
   .linebreaker {
