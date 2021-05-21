@@ -110,7 +110,6 @@ nav {
   margin-top: 80px;
   margin-left: 15px;
   margin-right: 15px;
-  padding-bottom: 170px;
 }
 
 /* Add styles to the section */
@@ -375,6 +374,11 @@ footer {
 
   .nav-item {
     display: none;
+  }
+
+  .container {
+    margin-top: 0px;
+    margin-bottom: 160px;
   }
 
   .linebreaker {
