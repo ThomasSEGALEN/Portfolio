@@ -22,11 +22,11 @@ Nous ne vous demandons pas d’ajouter du contenu sur votre site, mais de prépa
   
 ## 2. Étapes de production  
   
-**1)** Imaginer la structure de votre site, propice au partage de vos projets
-**2)** Penser UX
-**3)** Créer sur Git
-**4)** Réaliser des commits réguliers
-**5)** Vérifier que l'accès à votre repository soit public
+**1)** Imaginer la structure de votre site, propice au partage de vos projets  
+**2)** Penser UX  
+**3)** Créer sur Git  
+**4)** Réaliser des commits réguliers  
+**5)** Vérifier que l'accès à votre repository soit public  
   
 ## 3. Barème  
   
@@ -87,4 +87,4 @@ Loading effect :
 Scroll back to top :  
 *https://unicode-table.com/fr/*  
   
-*Header, footer, etc. are from previous projects or my imagination.*
+*Header, footer, etc. are from previous projects or my imagination.*  
