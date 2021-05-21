@@ -8,6 +8,7 @@
 2. [Étapes de production](README.md#2-étapes-de-production)  
 3. [Barème](README.md#3-barème)  
 4. [Rendu](README.md#4-rendu)  
+5. [Ressources](README.md#5-ressources)  
   
 ## 1. Mission  
   
@@ -67,3 +68,20 @@ Renommez votre objet comme suis : **CA - Contest - VILLE - Nom Prenom**
 
 Tout mail dont l’objet n’est pas renommé de cette manière se verra attribuer un malus sur la
 note finale.  
+  
+## 5. Ressources  
+  
+Icons :  
+*https://fonts.google.com/icons*  
+*https://icons8.com/*  
+  
+Border effect :  
+*https://codepen.io/Chester/pen/QPoyjN*  
+  
+Custom scrollbar :  
+*https://css-tricks.com/the-current-state-of-styling-scrollbars*  
+  
+Loading effect :  
+*https://codepen.io/WebSonata/pen/bRaONB*  
+  
+*Header, footer, etc. are from previous projects or my imagination.*
