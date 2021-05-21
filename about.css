@@ -114,6 +114,17 @@ nav {
   padding-bottom: 130px;
 }
 
+/* Add styles to the sections */
+.linebreaker {
+  position: relative;
+  background-color: black;
+  width: 60px;
+  height: 7px;
+  border-radius: 10px;
+  opacity: 0.7;
+  visibility: visible;
+}
+
 /* Add styles to the skills */
 .skills {
   display: flex;
@@ -182,6 +193,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
