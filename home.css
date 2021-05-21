@@ -114,7 +114,7 @@ nav {
 .name {
   position: absolute;
   font-size: 30px;
-  top: 90px;
+  top: 85px;
   left: 40px;
 }
 
@@ -425,7 +425,7 @@ footer {
   .name {
     position: absolute;
     font-size: 30px;
-    top: 105px;
+    top: 100px;
     left: 40px;
   }
 }
@@ -439,7 +439,7 @@ footer {
   .name {
     position: absolute;
     font-size: 30px;
-    top: 90px;
+    top: 85px;
     left: 32%;
   }
 }
