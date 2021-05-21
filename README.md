@@ -73,7 +73,7 @@ note finale.
   
 Icons :  
 *https://fonts.google.com/icons*  
-*https://icons8.com/*  
+*https://www.flaticon.com/fr/*  
   
 Border effect :  
 *https://codepen.io/Chester/pen/QPoyjN*  
